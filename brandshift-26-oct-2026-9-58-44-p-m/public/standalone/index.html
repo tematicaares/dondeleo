@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde Leo - Cocina Mediterránea</title>
+    <!-- Bootstrap 5 CSS desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap para los botones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Menú de Navegación) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.jpg" alt="Donde Leo Logo" height="42" class="me-2 bg-dark rounded-circle p-1 border border-warning">
+                <span class="fw-bold tracking-wide">DONDE LEO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sucursales">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning btn-sm text-dark fw-bold ms-lg-2 px-3 py-1" href="https://wa.me/50378902230" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON / HÉROE PRINCIPAL -->
+    <div class="jumbotron-custom text-center d-flex align-items-end justify-content-center">
+        <div class="container pb-4">
+            <!-- Logo centrado -->
+            <img src="images/logo.jpg" alt="Donde Leo - Cocina Mediterránea" class="hero-logo mb-3 img-fluid">
+            <!-- Título Principal -->
+            <h1 class="display-3 main-title">Donde Leo</h1>
+            <p class="lead subtitle-custom">Cocina Mediterránea - El auténtico sabor del Mediterráneo</p>
+            <a class="btn btn-warning btn-lg px-4 mt-2 font-weight-bold shadow" href="#sucursales" role="button">
+                <i class="bi bi-geo-alt-fill me-1"></i> Ver Sucursales
+            </a>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE SUCURSALES (Únicamente sucursales con ubicación, Google Maps y WhatsApp) -->
+    <div class="container my-5" id="sucursales">
+        <h2 class="text-center section-title mb-2">Nuestras Sucursales</h2>
+        <p class="text-center text-muted mb-5">Encuentra nuestra ubicación y contáctanos directamente por WhatsApp</p>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- SUCURSAL SAN SALVADOR (COLONIA ARCE) -->
+            <div class="col-md-8 col-lg-6">
+                <div class="card h-100 shadow-sm border-0 branch-card">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h3 class="card-title branch-name mb-0">San Salvador</h3>
+                            <span class="badge bg-warning text-dark px-2 py-1">Principal</span>
+                        </div>
+                        <p class="card-text text-muted flex-grow-1 mt-2">
+                            <i class="bi bi-geo-alt text-warning me-1"></i>
+                            Colonia Arce, Avenida Infantería No. 1, San Salvador.
+                        </p>
+                        <p class="phone-info mb-3">
+                            <i class="bi bi-telephone-fill text-warning me-1"></i> 
+                            2564-1673 / 7890-2230
+                        </p>
+                        <div class="d-grid gap-2 mt-2">
+                            <a href="https://wa.me/50378902230?text=Hola%20Donde%20Leo,%20quisiera%20hacer%20una%20consulta" target="_blank" class="btn btn-success py-2 fw-bold">
+                                <i class="bi bi-whatsapp me-1"></i> Contactar por WhatsApp
+                            </a>
+                            <a href="https://maps.app.goo.gl/unnMKBo437wByyBf6" target="_blank" class="btn btn-outline-primary py-2 fw-bold">
+                                <i class="bi bi-geo-alt me-1"></i> Abrir en Google Maps / Waze
+                            </a>
+                            <div class="row g-2 mt-1">
+                                <div class="col-6">
+                                    <a href="https://www.instagram.com/restaurantedondeleo?igsh=MTViYXdhb3A3MGY1Ng==" target="_blank" class="btn btn-outline-danger w-100 btn-sm">
+                                        <i class="bi bi-instagram me-1"></i> Instagram
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://www.facebook.com/leococinamediterranea?mibextid=ZbWKwL" target="_blank" class="btn btn-outline-secondary w-100 btn-sm">
+                                        <i class="bi bi-facebook me-1"></i> Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1 fw-bold">Donde Leo - Cocina Mediterránea</p>
+            <p class="mb-2 text-muted small">Colonia Arce, Avenida Infantería No. 1, San Salvador · Tel. 2564-1673 / 7890-2230</p>
+            <p class="mb-0 text-secondary small">&copy; 2026 Donde Leo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

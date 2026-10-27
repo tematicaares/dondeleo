@@ -1,0 +1,6 @@
+{
+  "name": "Donde Leo - Cocina Mediterránea",
+  "description": "Sitio web oficial de Donde Leo Cocina Mediterránea en San Salvador. Ubicación, teléfonos, redes sociales y contacto directo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

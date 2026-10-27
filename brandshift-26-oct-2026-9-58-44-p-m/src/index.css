@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom styles preserving the exact programming and visual style of the reference project */
+:root {
+  --theme-primary: #FFA500;
+  --theme-primary-hover: #e69500;
+  --theme-primary-dark: #b87500;
+}
+
+/* Título principal "Donde Leo" */
+.main-title {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFA500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35), 0 0 15px rgba(255, 165, 0, 0.3);
+  margin-bottom: 0.25rem;
+}
+
+/* Subtítulo del Jumbotron */
+.subtitle-custom {
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.95);
+}
+
+/* JUMBOTRON / HÉROE PERSONALIZADO */
+.jumbotron-custom {
+  min-height: 540px;
+  position: relative;
+  /* Fondo con la imagen de gastronomía mediterránea y degradado difuminado hacia blanco en la parte inferior */
+  background: linear-gradient(to bottom, rgba(17, 24, 39, 0.45) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.85) 78%, rgba(255, 255, 255, 1) 100%), 
+              url('/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Hero Logo */
+.hero-logo {
+  max-height: 160px;
+  width: auto;
+  border-radius: 9999px;
+  border: 4px solid #FFA500;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.35);
+  background-color: #0b0c10;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Botón temático con color #FFA500 */
+.btn-theme {
+  background-color: #FFA500;
+  color: #111827;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-theme:hover {
+  background-color: #e69500;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
+}
+
+/* Tarjetas y detalles */
+.branch-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 165, 0, 0.15);
+}
+
+.branch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(255, 165, 0, 0.15);
+}
+
+.branch-name {
+  color: #1f2937;
+  font-weight: 800;
+  border-bottom: 2px solid #FFA500;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.phone-info {
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
